@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+@import 'tailwindcss';
+
+@font-face {
+  font-family: "Geist:Medium";
+  src: url("https://static.figma.com/font/Geist_wght__1") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter:Regular";
+  src: url("https://static.figma.com/font/Inter_1") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter:Medium";
+  src: url("https://static.figma.com/font/Inter_1") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter:Semi Bold";
+  src: url("https://static.figma.com/font/Inter_1") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@theme {
+  --font-sans: "Inter:Regular", "Inter", sans-serif;
+  --color-background: #ffffff;
+  --color-foreground: #030303;
+  --color-border: #e6e6e6;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  html.lenis { scroll-behavior: auto; }
+  body { font-family: "Inter", sans-serif; }
+  button, summary, a, input, textarea { -webkit-tap-highlight-color: transparent; }
+  button { cursor: pointer; }
+  :focus-visible { outline: 2px solid #737373; outline-offset: 4px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
